@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.OrderDetailConfirmActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_one_grey_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/textview"
+            app:layout_constraintTop_toTopOf="@+id/order_detail_tv_departure_time"
+            app:srcCompat="@drawable/long_line" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="72dp"
+            android:text="出發日期："
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_departure_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020/1/31"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textview"
+            app:layout_constraintTop_toTopOf="@+id/textview" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_departure_address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="台北市中正區北平西路3號"
+            android:textColor="@color/quantum_grey400"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/order_detail_tv_departure_place"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_tv_departure_place" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_departure_place"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="台北車站"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/order_detail_tv_departure_time"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_tv_departure_date" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_costTime"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_two_grey_line"
+            android:paddingVertical="15dp"
+            android:text="車程2.5小時"
+            android:textColor="@color/colorPrimaryLittleDark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/order_detail_tv_arrive_place"
+            app:layout_constraintStart_toStartOf="@+id/order_detail_tv_arrive_time"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_tv_departure_address"
+            app:layout_constraintVertical_bias="0.485" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_departure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:text="18:30"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textview"
+            app:layout_constraintTop_toTopOf="@+id/order_detail_tv_departure_place" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_arrive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:text="19:30"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/order_detail_tv_departure_time"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_tv_departure_time" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_arrive_place"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:text="台中車站"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/order_detail_tv_departure_place"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_tv_departure_address" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_arrive_address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="台中市中區台灣大道一段1號"
+            android:textColor="@color/quantum_grey400"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/order_detail_tv_arrive_place"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_tv_arrive_place" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="28dp"
+            android:text="總金額："
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/order_detail_tv_carfare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textColor="@color/colorPrimaryLittleDark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="元"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/order_detail_tv_carfare"
+            app:layout_constraintTop_toTopOf="@+id/order_detail_tv_carfare" />
+
+        <Button
+            android:id="@+id/order_detail_btn_confirm"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/radius_green_button"
+            android:onClick="onOrderDetailConfirmClick"
+            android:text="付款"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="為什麼要先付錢 ?"
+            android:textColor="#0051CA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_detail_btn_confirm" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

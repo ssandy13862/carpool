@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">順路CarPool</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--takeToken-->
+    <string name="login_btn_login">登入</string>
+    <string name="login_btn_visitorlogin">訪客登入</string>
+    <string name="login_tv_register">立即註冊</string>
+    <string name="login_tv_forgetPassWd">忘記密碼?</string>
+
+    <!--register-->
+    <string name="descript_tv_title">開始一趟\n友善的分享之旅！</string>
+    <string name="descript_tv_title2">對於每天都要去同一個地方的人，\n
+                                      汽車共乘是一個非常不錯的通勤選項。\n\n
+                                      除了方便之外...\n\n減少汽油消耗量\n
+                                      分攤車資減少開車成本\n
+                                      降低污染排放\n
+                                       改善塞車問題\n\n
+                                       一起加入共乘吧 : )
+    </string>
+    <string name="descript_btn_passenger">我是乘客</string>
+    <string name="descript_btn_driver">我是司機</string>
+    <string name="register_btn_visitor">開始啟程</string>
+
+    <!--passenger register-->
+    <string name="user_passenger_tv_title">成為乘客</string>
+    <string name="user_driver_tv_title">成為司機</string>
+
+    <string name="user_ed_email">Email帳號</string>
+    <string name="user_ed_password">密碼</string>
+    <string name="user_ed_passwordCheck">確認密碼</string>
+    <string name="user_ed_nickname">稱呼</string>
+    <string name="user_ed_birth">點擊設定生日</string>
+    <string name="user_ed_gender">性別</string>
+    <string name="user_ed_phone">手機號碼</string>
+    <string name="user_ed_address">地址</string>
+    <string name="user_btn_nextStep">下一步</string>
+
+    <!--showToast-->
+    <string name="account_or_password_is_wroung">Email or password is wrong</string>
+    <string name="input_can_not_be_null">Input can not be null!</string>
+    <string name="password_is_different_from_check">Password is different from check</string>
+    <string name="account_has_existed">Account has existed</string>
+    <string name="regist_successfully">Regist successfully!</string>
+    <string name="create_order_failed">Create order failed</string>
+
+    <!--search hint-->
+    <string name="search_hint">請搜尋地點</string>
+
+    <!--driver register-->
+    <string name="driver_license_tv_title">汽車驗證</string>
+    <string name="driver_ed_licenseNumber">車牌號碼</string>
+    <string name="driver_tv_uploadTitle">上傳駕照照片</string>
+
+    <!--map key--> //translatable???
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+    <string name="mapkey2" translatable="false">AIzaSyAhzvhhXot7OpEIIgnYJ0UBckFX_J95AVk</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="ok_map_key" translatable="false">AAIzaSyAhzvhhXot7OpEIIgnYJ0UBckFX_J95AVk</string>
+    <string name="my_map_key" translatable="false">AIzaSyBx6htgDTGYeb8IBHeMp4Z3jMd4kdRb9Ng</string>
+    <string name="my_SHA1_key">B3:71:02:DE:1C:DB:F0:B9:2F:BD:E3:9D:9E:DE:F0:E5:9A:05:40:2F</string>
+
+    <string name="googlemap_search_departure_place">尋找出發地</string>
+    <string name="googlemap_search_arrive_place">尋找目的地</string>
+
+    <!--navigation-->
+    <string name="menu_navigation_home">個人</string>
+    <string name="menu_navigation_notification">通知</string>
+    <string name="menu_navigation_addPlan">新增計畫</string>
+    <string name="menu_navigation_myorder">我的旅程</string>
+    <string name="menu_navigation_order">尋找旅程</string>
+
+    <!--item order-->
+    <string name="order_tv_departure_time">09:00</string>
+    <string name="order_tv_arrive_time">18:00</string>
+    <string name="api_does_not_work">api doesn\'t work !!!</string>
+    <string name="myorder_menu_delete">刪除</string>
+
+
+</resources>

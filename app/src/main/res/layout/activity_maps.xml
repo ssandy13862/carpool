@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    map:layout_constraintTop_toTopOf="@+id/map">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:elevation="1dp"
+        android:theme="?attr/actionBarTheme"
+        map:layout_constraintBottom_toTopOf="@+id/guideline"
+        map:layout_constraintEnd_toStartOf="@+id/google_map"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/addPlanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:elevation="0dp"
+        android:text="規劃行程"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        map:layout_constraintEnd_toStartOf="@+id/toolbar"
+        map:layout_constraintStart_toEndOf="@+id/toolbar"
+        map:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <SearchView
+        android:id="@+id/passengerLocationSearch"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_grey_round"
+        android:closeIcon="@drawable/places_ic_clear"
+        android:elevation="2dp"
+        android:iconifiedByDefault="false"
+        android:keyboardNavigationCluster="false"
+        android:queryHint="尋找出發地"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/addPlanTitle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/passengerLocationAuto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_grey_round"
+        android:textAlignment="center"
+        map:layout_constraintBottom_toBottomOf="@+id/passengerLocationSearch"
+        map:layout_constraintEnd_toEndOf="@+id/passengerLocationSearch"
+        map:layout_constraintStart_toStartOf="@+id/passengerLocationSearch"
+        map:layout_constraintTop_toTopOf="@+id/passengerLocationSearch" />
+
+    <SearchView
+        android:id="@+id/destinationAddressSearch"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="尋找目的地"
+        android:background="@drawable/bg_grey_round"
+        android:closeIcon="@drawable/places_ic_clear"
+        android:elevation="2dp"
+        android:iconifiedByDefault="false"
+        android:keyboardNavigationCluster="false"
+        android:queryHint="尋找目的地"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/passengerLocationSearch" />
+
+    <AutoCompleteTextView
+        android:id="@+id/destinationAddressAuto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="0dp"
+        android:iconifiedByDefault="false"
+        android:textAlignment="center"
+        map:layout_constraintBottom_toBottomOf="@+id/destinationAddressSearch"
+        map:layout_constraintEnd_toEndOf="@+id/destinationAddressSearch"
+        map:layout_constraintStart_toStartOf="@+id/destinationAddressSearch"
+        map:layout_constraintTop_toTopOf="@+id/destinationAddressSearch" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.21" />
+
+
+    <fragment
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="14dp"
+        map:layout_constraintBottom_toTopOf="@+id/plan_map_btn_nextStep"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbar"
+        map:layout_constraintVertical_bias="0.0"></fragment>
+
+    <Button
+        android:id="@+id/plan_map_btn_nextStep"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/radius_green_button"
+        android:onClick="onMapNextStepClick"
+        android:text="@string/user_btn_nextStep"
+        android:textColor="@color/colorWhite"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="@+id/google_map"
+        map:layout_constraintTop_toBottomOf="@+id/google_map" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

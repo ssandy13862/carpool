@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:context=".view.fragmentAll.OrderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_nocolor_round_thin_grey_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/order_tv_carfare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="24dp"
+            android:gravity="end"
+            android:text="$150"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/order_tv_date" />
+
+        <TextView
+            android:id="@+id/order_tv_endPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="台中車站"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/order_tv_startPlace"
+            app:layout_constraintTop_toTopOf="@+id/order_tv_endTime" />
+
+        <TextView
+            android:id="@+id/order_tv_startPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:text="台北車站"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/order_tv_startTime" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/distance"
+            app:layout_constraintStart_toEndOf="@+id/order_tv_startTime"
+            app:layout_constraintTop_toTopOf="@+id/order_tv_startTime" />
+
+        <TextView
+            android:id="@+id/order_tv_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/order_tv_arrive_time"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/order_tv_startTime"
+            app:layout_constraintTop_toBottomOf="@+id/order_tv_startTime" />
+
+        <TextView
+            android:id="@+id/order_tv_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/order_tv_departure_time"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/order_tv_date"
+            app:layout_constraintTop_toBottomOf="@+id/order_tv_date" />
+
+        <TextView
+            android:id="@+id/order_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="168dp"
+            android:text="出發日：2020/01/09 "
+            android:textColor="@color/quantum_grey500"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/order_iv_orderPhoto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/bg_mouseyear_jpg"
+            app:layout_constraintBottom_toTopOf="@+id/order_tv_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/order_tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radius_orange_button"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="共享返鄉"
+            android:textColor="@color/quantum_bluegrey900"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

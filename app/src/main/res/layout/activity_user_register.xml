@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.register.UserRegisterActivity">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/user_driver_tv_title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/user_ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/user_ed_email"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:id="@+id/user_ed_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/user_ed_password"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/user_ed_passwordCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/user_ed_passwordCheck"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/user_ed_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/user_ed_nickname"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/user_tv_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:onClick="onBirthdayTextViewClick"
+                        android:text="點擊設定生日"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <Spinner
+                        android:id="@+id/user_sp_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/genders"/>
+
+                    <EditText
+                        android:id="@+id/user_ed_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/user_ed_phone"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/user_ed_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/user_ed_address"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/user_btn_nextStep"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/radius_green_button"
+                        android:text="@string/user_btn_nextStep"
+                        android:textColor="@color/colorWhite"
+                        android:onClick="onUserRegisterNextStepButtonClick"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

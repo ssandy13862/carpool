@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@drawable/bg_one_grey_line"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/bg_circle_yellow" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/bg_circle_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/order_et_keyword1"
+                    style="@android:style/Widget.Material.Light.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/bg_round_thin_grey_line"
+                    android:ems="10"
+                    android:hint="輸入出發地關鍵字..."
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/order_et_keyword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round_thin_grey_line"
+                    android:ems="10"
+                    android:hint="輸入目的地關鍵字..."
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/order_progessBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:foregroundGravity="center_horizontal"
+                    android:indeterminate="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/rv_list"
+                    app:layout_constraintTop_toTopOf="@+id/rv_list" />
+
+                <!--                style="?android:attr/progressBarStyleLargeInverse"-->
+                <!--                android:indeterminateDrawable="@drawable/order_progress"-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

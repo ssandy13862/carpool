@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "611210061685",
+    "firebase_url": "https://dec23carpool.firebaseio.com",
+    "project_id": "dec23carpool",
+    "storage_bucket": "dec23carpool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611210061685:android:05ac1818feaa48d48e953c",
+        "android_client_info": {
+          "package_name": "com.example.dec23_carpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611210061685-i3t2id7e1cd7d3hcvfaandfanmfaupg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dec23_carpool",
+            "certificate_hash": "a061a1300be50bea090c4d3d7d847f51e68e9ed2"
+          }
+        },
+        {
+          "client_id": "611210061685-rq6k37t56l2egsn30g8sp7g4u84mf9u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABcWvXw_j2mCdWf2vzB3t8ssMOfPqqtmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611210061685-rq6k37t56l2egsn30g8sp7g4u84mf9u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

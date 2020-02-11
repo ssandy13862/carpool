@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.MyOrderDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="-32dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_one_grey_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/textview"
+                    app:layout_constraintTop_toTopOf="@+id/myorder_detail_tv_departure_time"
+                    app:srcCompat="@drawable/long_line" />
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="52dp"
+                    android:text="出發日期："
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_departure_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020/1/31"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/textview"
+                    app:layout_constraintTop_toTopOf="@+id/textview" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_departure_address"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="台北市中正區北平西路3號"
+                    android:textColor="@color/quantum_grey400"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_departure_place" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_departure_place"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:text="台北車站"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/myorder_detail_tv_departure_address"
+                    app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_departure_date" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_costTime"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_two_grey_line"
+                    android:paddingVertical="15dp"
+                    android:text="車程2.5小時"
+                    android:textColor="@color/colorPrimaryLittleDark"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/myorder_detail_tv_arrive_place"
+                    app:layout_constraintStart_toStartOf="@+id/myorder_detail_tv_arrive_time"
+                    app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_departure_address"
+                    app:layout_constraintVertical_bias="0.485" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_departure_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:text="18:30"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textview"
+                    app:layout_constraintTop_toTopOf="@+id/myorder_detail_tv_departure_place" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_arrive_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="132dp"
+                    android:text="19:30"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/myorder_detail_tv_departure_time"
+                    app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_departure_time" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_arrive_place"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="108dp"
+                    android:text="台中車站"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/myorder_detail_tv_departure_place"
+                    app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_departure_address" />
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_arrive_address"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="3dp"
+                    android:text="台中市中區台灣大道一段1號"
+                    android:textColor="@color/quantum_grey400"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/myorder_detail_tv_arrive_place"
+                    app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_arrive_place" />
+
+                <ImageView
+                    android:id="@+id/myorder_detail_iv_cancel"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:onClick="onCancelClick"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_delete" />
+
+                <ImageView
+                    android:id="@+id/mymyorder_detail_iv_location"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:onClick="onMarkerClick"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@+id/myorder_detail_iv_cancel"
+                    app:layout_constraintTop_toTopOf="@+id/myorder_detail_iv_cancel"
+                    app:srcCompat="@drawable/ic_marker" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/myorder_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_one_grey_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <ImageView
+                    android:id="@+id/myOrder_detail_driverPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/people" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView12"
+                        app:layout_constraintTop_toTopOf="@+id/imageView12"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView13"
+                        app:layout_constraintTop_toTopOf="@+id/imageView13"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView14"
+                        app:layout_constraintTop_toTopOf="@+id/imageView14"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                    <TextView
+                        android:id="@+id/myorder_detail_tv_driver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="王小明"
+                        app:layout_constraintStart_toStartOf="@+id/myorder_detail_tv_score"
+                        app:layout_constraintTop_toBottomOf="@+id/myorder_detail_tv_score" />
+
+                    <TextView
+                        android:id="@+id/myorder_detail_tv_driver_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="男"
+                        app:layout_constraintStart_toEndOf="@+id/myorder_detail_tv_driver_name"
+                        app:layout_constraintTop_toTopOf="@+id/myorder_detail_tv_driver_name" />
+
+                    <TextView
+                        android:id="@+id/myorder_detail_tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView15"
+                        app:layout_constraintTop_toTopOf="@+id/imageView15"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@+id/myorder_detail_tv_score"
+                        app:layout_constraintTop_toTopOf="@+id/myorder_detail_tv_score"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_one_grey_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myorder_layout2">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="25dp"
+                    android:text="個人偏好"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+                    <ImageView
+                        android:id="@+id/myorder_detail_iv_isLuggage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@+id/myorder_detail_iv_isPet"
+                        app:layout_constraintTop_toTopOf="@+id/myorder_detail_iv_isEat"
+                        app:srcCompat="@drawable/ic_luggage" />
+
+                    <ImageView
+                        android:id="@+id/myorder_detail_iv_isPet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@+id/myorder_detail_iv_isSmoke"
+                        app:layout_constraintTop_toTopOf="@+id/myorder_detail_iv_isEat"
+                        app:srcCompat="@drawable/ic_pet" />
+
+                    <ImageView
+                        android:id="@+id/myorder_detail_iv_isSmoke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@+id/myorder_detail_iv_isEat"
+                        app:layout_constraintTop_toTopOf="@+id/myorder_detail_iv_isEat"
+                        app:srcCompat="@drawable/ic_smoke" />
+
+                    <ImageView
+                        android:id="@+id/myorder_detail_iv_isEat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_eat" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/myorder_constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <TextView
+                    android:id="@+id/myorder_detail_tv_carfare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="56dp"
+                    android:text="$ 150"
+                    android:textColor="@color/colorPrimaryLittleDark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="每位乘客的金額"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
